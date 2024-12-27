@@ -1,0 +1,432 @@
+body {
+    background: url('image/WallpeperH.jpg') no-repeat center center fixed;
+    background-size: cover;
+    /* ปรับภาพให้ครอบคลุมพื้นที่ทั้งหมด */
+    color: white;
+    height: 100%;
+    margin: 0;
+}
+.about-box {
+    
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* เพิ่ม padding เพื่อสร้างพื้นที่ว่างรอบข้อความ */
+    color: white;  /* เพิ่มสีข้อความเพื่อให้มองเห็นได้ชัด */
+}
+
+#section-to-fade {
+    background: url('image/Shopland-removebg.png') no-repeat center center;
+    background-size: contain;
+    /* ปรับขนาดภาพให้พอดีโดยแสดงทั้งหมด */
+    color: white;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    text-align: center;
+    transition: opacity 1s ease, transform 1s ease, height 1s ease, font-size 1s ease;
+}
+
+#section-to-fade:hover {
+    transform: scale(1);
+    /* ขยายขนาดให้ใหญ่ขึ้น 20% */
+    font-size: 12rem;
+    /* เพิ่มขนาดฟอนต์ */
+    height: 100vh;
+    /* ปรับขนาดความสูง */
+}
+
+
+.card-pos {
+    position: relative; /* เพื่อให้สามารถใช้ absolute positioning กับ .badge-new */
+}
+.product-img {
+    width: 100%; /* ทำให้ภาพขยายเต็มการ์ด */
+    height: auto;
+}
+
+/* สไตล์ป้าย "New" */
+.badge-new {
+    position: absolute;
+    top: 10px; /* ระยะห่างจากด้านบน */
+    left: 10px; /* ระยะห่างจากด้านซ้าย */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: bounce 1s infinite; /* เริ่มการเคลื่อนไหวแบบเด้ง */
+}
+
+/* การเคลื่อนไหวให้เด้ง */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* เคลื่อนที่ขึ้น */
+    }
+}
+
+.badge-new img {
+    width: 100px; /* ขนาดของดาว */
+    height: 50px;
+}
+
+/* เพิ่มพื้นหลังและขอบมนให้รูปดาว */
+.badge-new img {
+    border-radius: 50%; /* ทำให้รูปดาวมีขอบมน */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* เงาเบา ๆ */
+}
+
+.card {
+    background-color: #1a1a1a;
+    border: none;
+    color: white;
+}
+
+/*card เด้งใส่หน้า*/
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/*button ซื้อเลย*/
+.choose-btn {
+    background-color: #198754;
+    color: white;
+}
+
+/*button ซื้อเลย เปลียนสี*/
+.choose-btn:hover {
+    background-color: #145a32;
+}
+
+/*ภาพพื้นหลังheader*/
+.custom-navbar {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* สีขาวโปร่งแสง */
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+}
+
+.cta-btn {
+    background: linear-gradient(135deg, #3f51b5, #303f9f);
+    /* ไล่สีจากม่วงไปฟ้า */
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 30px;
+    /* ทำให้ปุ่มมุมโค้งมน */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    /* เงาเบา ๆ */
+    transition: all 0.3s ease-in-out;
+    /* การเปลี่ยนแปลงที่นุ่มนวล */
+    cursor: pointer;
+    /* เปลี่ยนเคอร์เซอร์เมื่อชี้ไปที่ปุ่ม */
+    text-decoration: none;
+    /* ลบขีดเส้นใต้จากลิงก์ */
+}
+
+.cta-btn:hover {
+    background: linear-gradient(135deg, #2c387e, #3f51b5);
+    /* เปลี่ยนไล่สีเมื่อ hover */
+    transform: scale(1.05);
+    /* ขยายขนาดเล็ก ๆ เมื่อ hover */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+    /* เพิ่มเงาเมื่อ hover */
+}
+
+.cta-btn:active {
+    transform: scale(0.98);
+    /* ลดขนาดลงเมื่อคลิก */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    /* ลดเงาเมื่อคลิก */
+}
+
+
+
+.icon-img {
+    transition: transform 0.s ease-in-out;
+    /* เพิ่ม transition smooth */
+}
+
+.icon-img:hover {
+    transform: translateY(-10px) scale(1.2);
+    /* ขยายขนาดขึ้น 20% */
+}
+
+
+
+/*ตัวแบ่ง*/
+
+.section {
+    padding: 100px 0;
+}
+
+/*ตัวแบ่ง*/
+
+
+/* feature*/
+.feature-icon i {
+    font-size: 3rem;
+    color: #ff9800;
+}
+
+.bg-light {
+    background-color: #212121 !important;
+}
+
+.feature-box {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 20px;
+    /* เพิ่มระยะห่างระหว่างกล่องในแนวตั้ง */
+}
+
+
+.feature-box:hover {
+    transform: scale(0.95);
+    /* ขนาดลดลงเมื่อคลิก */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* ลดเงาเมื่อคลิก */
+}
+
+/* feature*/
+
+.container222 {
+    background-color: #fff;
+    width: 1000px;
+    height: 100vh;
+    /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+
+
+
+.nav-link {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    text-shadow: 3px 3px 10px rgba(255, 0, 0, 0.7);
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+    /* ขยายขนาดเมื่อ hover */
+}
+
+.header-to {
+    position: relative;
+    height: 100px;
+}
+
+
+
+
+
+
+
+.maintxt {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    text-shadow: 3px 3px 10px rgba(255, 0, 0, 0.7);
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.maintxt2 {
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    text-shadow: 3px 3px 10px rgba(255, 0, 0, 0.7);
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+
+.name {
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.para {
+    color: #8c8c8c;
+    font-size: 12px;
+    position: relative;
+    bottom: 3px;
+}
+
+.name12 {
+    color: #ffcc00;
+    /* สีเขียว */
+    font-size: 18px;
+    /* ขนาดตัวอักษร */
+    font-weight: bold;
+    /* ทำตัวหนา */
+    font-family: "Arial", sans-serif;
+    /* แบบตัวอักษร */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
+.fantasy-text {
+    font-family: 'Cinzel', serif;
+    font-size: 10rem;
+    text-shadow: 3px 3px 10px rgba(255, 0, 0, 0.7);
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+.fantasy-text1 {
+    font-family: 'Cinzel', serif;
+    font-size: 5rem;
+    text-shadow: 3px 3px 10px rgba(255, 0, 0, 0.7);
+    color: #000000;
+    letter-spacing: 1px;
+}
+.fantasy-text2 {
+    font-family: 'Cinzel', serif;
+    font-size: 5rem;
+    text-shadow: 3px 3px 10px rgba(255, 0, 0, 0.7);
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.btn-buy {
+    background-color: #3eff65;  /* สีพื้นหลัง */
+    color: white;  /* สีตัวอักษร */
+    border: none;  /* ไม่มีขอบ */
+    padding: 12px 30px;  /* ขนาดปุ่ม */
+    font-size: 16px;  /* ขนาดตัวอักษร */
+    font-weight: bold;  /* ตัวอักษรหนา */
+    border-radius: 50px;  /* ขอบปุ่มมน */
+    transition: background-color 0.3s, transform 0.2s ease;  /* เอฟเฟกต์การเปลี่ยนสีและขยายขนาด */
+    text-transform: uppercase;  /* ตัวอักษรทั้งหมดเป็นตัวพิมพ์ใหญ่ */
+}
+
+.btn-buy:hover {
+    background-color: #019f21;  /* สีที่เปลี่ยนไปเมื่อ hover */
+    transform: translateY(-5px);  /* ปุ่มขยับขึ้นเล็กน้อย */
+}
+
+.btn-buy:active {
+    background-color: #055515;  /* สีเมื่อคลิก */
+    transform: translateY(2px);  /* ขยับลงเมื่อคลิก */
+}
+
+.btn-buy:focus {
+    outline: none;  /* ลบเส้นขอบเมื่อโฟกัส */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);  /* เพิ่มเงาให้ปุ่มเมื่อโฟกัส */
+}
+
+
+#backToTop {
+    position: fixed; /* ติดตามหน้าจอ */
+    bottom: 20px; /* ระยะห่างจากขอบล่าง */
+    right: 30px; /* ระยะห่างจากขอบขวา */
+    background-image: url(image/GTO.png); /* ใส่ URL รูปภาพ */
+    background-size: cover; /* ทำให้ภาพครอบปุ่มพอดี */
+    background-position: center; /* จัดตำแหน่งภาพให้อยู่กลางปุ่ม */
+    background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    display: none; /* ซ่อนปุ่มไว้ก่อน */
+}
+
+/* เปลี่ยนสีเมื่อเอาเมาส์ไปวาง */
+#backToTop:hover {
+    opacity: 0.8;
+}
+
+.back-button {
+    position: absolute;  /* หรือใช้ fixed ถ้าต้องการให้ปุ่มคงที่ */
+    top: 20px;           /* ระยะห่างจากขอบบน */
+    left: 20px;          /* ระยะห่างจากขอบซ้าย */
+    font-size: 24px;     /* ขนาดของไอคอน */
+    color: #333;         /* สีของไอคอน */
+  }
+
+  .back-button:hover {
+    color: #007bff;  /* เปลี่ยนสีเมื่อ hover */
+  }
+
+  .card-go {
+    width: 190px;
+    height: 254px;
+    background: #07182e;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.card-go h2 {
+    z-index: 1;
+    color: white;
+    font-size: 2em;
+}
+
+.card-go::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    animation: rotBGimg 3s linear infinite;
+    transform-origin: center;
+    z-index: 0; /* ใส่ z-index เพื่อให้อยู่ด้านหลังข้อความ */
+}
+
+@keyframes rotBGimg {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.card-go::after {
+    content: "";
+    position: absolute;
+    background: #07182e;
+    inset: 5px; /* ใช้ inset เพื่อกำหนด margin รอบขอบใน */
+    border-radius: 15px;
+    z-index: 1; /* อยู่เหนือ ::before แต่ใต้ h2 */
+}
+
+/* การซูมภาพเมื่อผู้ใช้โฮเวอร์ */
+.zoom-image {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* เพิ่ม transition สำหรับ transform และ box-shadow */
+}
+
+.zoom-image:hover {
+    transform: scale(1.2);  /* ซูมให้ภาพขยายขึ้น */
+    border: none;  /* ไม่มีกรอบ */
+}
+
+/* CSS สำหรับ modal */
+.modal-body img {
+    transition: transform 10s ease;
+}

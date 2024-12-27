@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Saenru Shop</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div id="navbar-container"></div>
+
+    <!-- Product Detail Section -->
+    <div class="container product-detail">
+        <div class="row bg-light p-4 rounded shadow-sm">
+            <!-- Product Image -->
+            <div class="col-md-6">
+                <img src="image/NeoVision.png" alt="Product Image" class="product-img">
+            </div>
+
+            <!-- Product Information -->
+            <div class="col-md-6 product-info">
+                <h2>NeoVision</h2>
+                <p><strong>Price:</strong> SC50</p>
+                <p><strong>Availability:</strong> In Stock</p>
+                <p><strong>Category:</strong> wearables</p>
+                <button class="btn-buy">Add to Cart</button>
+            </div>
+        </div>
+
+
+        <div class="tabs-section mt-4">
+            <div class="container">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="description-tab" data-bs-toggle="tab"
+                            data-bs-target="#description" type="button" role="tab">Description</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews"
+                            type="button" role="tab">Reviews</button>
+                    </li>
+                </ul>
+
+                <!-- Content with background -->
+                <div class="tab-content p-4 mt-3 bg-light rounded shadow-sm" id="myTabContent"
+                    style="max-width: 900px; margin: 0 auto;">
+                    <!-- Description Tab -->
+                    <div class="tab-pane fade show active" id="description" role="tabpanel">
+                        <p>
+                            "พบกับ NeoVision
+                            สัญลักษณ์แห่งความล้ำสมัยที่ผสานความลึกลับของจักรวาลเข้ากับเทคโนโลยีแห่งอนาคต
+                            ดวงตาเรืองแสงที่สะท้อนความเชื่อมโยงระหว่างมนุษยชาติและความเป็นไปได้ไร้ขอบเขตของห้วงอวกาศ
+
+                            ด้วยการออกแบบที่โดดเด่นราวกับหลุดมาจากอีกมิติ NeoVision ไม่เพียงเป็นของตกแต่ง
+                            แต่มันคือหน้าต่างที่เปิดสู่อนาคตและสะท้อนให้เห็นถึงวิสัยทัศน์ที่ก้าวข้ามข้อจำกัดของมนุษย์
+                            เหมาะสำหรับผู้ที่รักในสิ่งแปลกใหม่และกล้าท้าทายกรอบความคิดเดิม
+
+                            🌌 วัสดุที่ใช้เปล่งประกายด้วยแสงนีออนอันน่าหลงใหล
+                            พร้อมกลไกไฟฟ้าที่เลียนแบบการเต้นของชีพจรจักรวาล
+                            เสริมสร้างบรรยากาศล้ำยุคและความลึกลับในพื้นที่ของคุณ
+                        </p>
+                    </div>
+
+                    <!-- Reviews Tab -->
+                    <div class="tab-pane fade" id="reviews" role="tabpanel">
+                        <p><strong>John Doe:</strong> This product is amazing! (5 stars)</p>
+                        <p><strong>Jane Smith:</strong> Good quality, but shipping was delayed. (4 stars)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <section id="social-links" class="bg-dark py-4">
+        <div class="container text-center">
+            <h3 class="text-white mb-4">Contact us</h3>
+            <div class="d-flex justify-content-center align-items-center">
+                <!-- Facebook Icon -->
+                <a href="https://facebook.com" class="text-white mx-3" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                        alt="Facebook" class="icon-img" style="width: 30px; height: 30px;">
+                </a>
+
+                <!-- X (Twitter) Icon -->
+                <a href="https://x.com/" class="text-white mx-3" target="_blank">
+                    <img src="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg"
+                        alt="X" class="icon-img" style="width: 30px; height: 30px;">
+                </a>
+
+                <!-- Instagram Icon -->
+                <a href="https://instagram.com" class="text-white mx-3" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"
+                        class="icon-img" style="width: 30px; height: 30px;">
+                </a>
+
+                <!-- Gmail Icon -->
+                <a href="mailto:example@gmail.com" class="text-white mx-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png"
+                        alt="Gmail" class="icon-img" style="width: 30px; height: 30px;">
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Use Fetch API to load navbar.html and inject it into the page
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+</body>
+
+</html>
